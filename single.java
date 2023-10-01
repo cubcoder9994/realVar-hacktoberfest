@@ -6,9 +6,10 @@ class single{
     for(int i=0;i<15;i++){
       arr[i]=sc.nextInt();
     }
-    int bit=0;
-    for(int i:arr){
-      bit = (bit^i);
+    int bit=0,i=0;
+    while(i<arr.length){
+      bit = (bit^arr[i]);
+      i++;
   }
 	System.out.println("Single number = "+bit);
   }
