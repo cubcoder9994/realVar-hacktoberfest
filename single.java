@@ -1,16 +1,16 @@
-import java.util.*;
+import java.util.Scanner;
 class single{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
-    int arr[] = new int[15];
-    for(int i=0;i<15;i++){
-      arr[i]=sc.nextInt();
-    }
-    int bit=0,i=0;
-    while(i<arr.length){
-      bit = (bit^arr[i]);
-      i++;
-  }
-	System.out.println("Single number = "+bit);
+    int bit = 0;
+        System.out.println("Enter the number of integers: ");
+        int n = sc.nextInt();
+        System.out.println("Enter the integers: ");
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+            bit ^= num;
+        }
+
+        System.out.println("Single number = " + bit);
   }
 }
